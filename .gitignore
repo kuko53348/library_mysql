@@ -1,0 +1,153 @@
+# =========================================================================
+# Bases de datos SQLite
+# =========================================================================
+# El archivo .db de cada base. Nunca se sube al repo: los datos locales
+# no van al control de versiones.
+*.db
+*.sqlite
+*.sqlite3
+
+# Archivos auxiliares de SQLite (WAL, SHM). Los crea SQLite cuando el
+# journal_mode es WAL, que es lo que usa library_sqlite.
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+
+# =========================================================================
+# Python
+# =========================================================================
+# Bytecode compilado
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribución / empaquetado
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Cobertura y testing
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# =========================================================================
+# Editores
+# =========================================================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# =========================================================================
+# Sistema operativo
+# =========================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# =========================================================================
+# Entorno y secretos
+# =========================================================================
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Secretos
+*.pem
+*.key
+secrets.json
+
+# Configuración local
+config.local.py
+settings.local.py
+
+# =========================================================================
+# Logs y temporales
+# =========================================================================
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# =========================================================================
+# Datos locales
+# =========================================================================
+# Si tienes carpetas de datos locales
+data/
+datos/
+*.csv
+*.xlsx
+*.json
+
+# Pero si algún JSON o CSV es parte del proyecto, fuerza su inclusión:
+# !data/seed.json
+# !config/defaults.json
+
+# =========================================================================
+# Node / frontend (si algún día lo usas)
+# =========================================================================
+node_modules/
+package-lock.json
+yarn.lock
+.npm/
+.next/
+dist/
+build/
+
+# =========================================================================
+# Docker
+# =========================================================================
+.dockerignore
+docker-compose.override.yml
+
+# =========================================================================
+# Documentación generada
+# =========================================================================
+docs/_build/
+site/
